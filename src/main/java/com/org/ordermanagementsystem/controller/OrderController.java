@@ -44,7 +44,7 @@ public class OrderController {
     }
 
     @GetMapping("/{id}")
-    @Operation(summary = "Get order by ID", description = "Retrieving an existing order by its ID")
+   // @Operation(summary = "Get order by ID", description = "Retrieving an existing order by its ID")
     @ApiResponses({ @ApiResponse(responseCode = "200", description = "Order retrieved successfully"),
             @ApiResponse(responseCode = "404", description = "Order not found") })
     public ResponseEntity<OrderResponseDto> getOrderByID(@PathVariable Integer id) {
